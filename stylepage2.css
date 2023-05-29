@@ -135,6 +135,49 @@ header {
     padding: 10px 20px;
     font-size: 16px;
   }
+
+  @media screen and (max-width: 724px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 100px;
+      margin-top: 170px;
+    }
+
+
+
+     .back-button {
+      top: 50px;
+      left: 50px;
+    }
+    
+  }
+
+  @media screen and (max-width: 1014px) {
+    .container {
+      display: flex;
+      flex-direction: center;
+      align-items: center;
+      justify-content: center;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .content {
+      margin-top: 50px;
+      width: 50vw;
+     }
+
+     .container-two {
+      display: block;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 50px;
+    }
+  
+  }
   
   
   
