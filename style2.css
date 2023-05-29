@@ -1,0 +1,241 @@
+/*  HEADER  */
+
+#about-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #363636;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 20px 60px 60px 50px;
+  background-color: #B8ADA3;
+  overflow: hidden; /* Hide the overflow when content is collapsed */
+  transition: height 0.3s ease; /* Add a smooth transition effect */
+}
+
+#about-contact.show {
+  height: auto; /* Set the height to auto when content is shown */
+}
+
+.about {
+  flex-basis: 48%;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+
+.header-main {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f7f7f4;
+  padding: 50px;
+  position: relative;
+  margin-bottom: 0; /* Remove the default margin-bottom */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Courier New', Courier, monospace;
+  color: #363636;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  padding: 0;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-text-container {
+  margin-right: auto;
+  padding-left: 0vw;
+  padding-top: 5vw;
+}
+
+.header-text {
+  position: absolute;
+  width: 28%;
+  height: auto;
+}
+
+.header-svg-container {
+  margin-left: auto;
+  padding-right: 20vw;
+}
+
+.header-svg {
+  width: 100%;
+  max-width: 300px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/*  BODY  */
+body {
+  background-color: #363636;
+  margin: 0;
+}
+
+
+.div-first-text {
+  font-size: 36px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.div-second-text {
+  font-size: 18px;
+  margin-top: -20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.projects-text {
+  color: #f7f7f4;
+  margin-left: 40px;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  margin: 40px;
+  padding: 40px;
+  background-color: #f7f7f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+  
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #733A37;
+}
+
+.link {
+  color: #5A2A27;
+}
+
+.container-skills {
+  display: flex;
+  padding-top: 20px;
+}
+
+.box {
+  flex: 1;
+  height: 100px;
+  background-color: #f7f7f4;
+  margin-right: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #363636;
+  display: flex;
+  flex-direction: column;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+.box span {
+  font-size: 12px;
+}
+
+.button {
+  background-color: #5A2A27;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.p-box {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+#contact {
+  background-color: #5a2a27;
+  color:#f7f7f4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact {
+  color:#f7f7f4;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1160px) {
+  
+  .card-container {
+    display:block;
+  }
+
+  .navbar-list {
+    list-style-type: none;
+    display: block;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  header-main {
+    /* display: flex;
+    justify-content: flex-end; */
+    background-color: #f7f7f4;
+    /* padding: 50px; */
+    position: relative;
+    height: 50vh; /* Remove the default margin-bottom */
+  }
+  
+  .header-text {
+    /* position: absolute; */
+    width: 0px;
+    /* height: auto; */
+  }
+
+  .header-svg-container {
+    overflow:hidden;
+    width: 0px;
+  }
+  
+  .header-svg {
+   overflow:hidden;
+   width: 0px;
+  }
+
+}
